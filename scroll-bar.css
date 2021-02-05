@@ -1,0 +1,56 @@
+.my-scrollbar{  /* SCROLLBAR */
+  float: right;
+  top: 115px;
+  right: 5px;
+  position:fixed;
+  display: block;
+  z-index: 100;
+}
+  
+.my-scrollbar img{  /* IMAGEN*/
+  max-width: 70px;    
+  margin: 0px auto 0px auto;
+  display: block;
+}
+  
+.my-scrollbar .scrollbar{ /* DIV DEL SCROLLBAR*/
+  margin: 0 auto 25px auto;
+  height: 280px;
+  width: 8.5px;
+  background: #F5F5F5;
+  overflow-y: scroll;
+  display: block;
+
+  
+}
+
+.my-scrollbar .scrollbar .force-overflow{
+  min-height: 450px;
+}
+
+  
+.my-scrollbar .scrollbar::-webkit-scrollbar-track{  /* PISTA */
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  height: 10px;
+}
+  
+.my-scrollbar .scrollbar::-webkit-scrollbar{  /* BARRA*/
+  width: 8px;
+  background-color: #F5F5F5;
+}
+  
+.my-scrollbar .scrollbar::-webkit-scrollbar-thumb{ /* MINIATURA */
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #5015c2;
+}
+  
+.my-scrollbar p{  /* TEXTO*/
+  color: #606060;
+  font-size: 13px;
+  transform: rotate(-90deg);
+  display: block;
+  margin: 50px auto 45px auto;
+}      
