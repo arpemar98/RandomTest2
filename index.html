@@ -27,103 +27,107 @@
 
     <body>
 
-        <!-- SUBTITULO -->
-        <nav class="navbar navbar-dark bg-dark px-0 pb-0 mb-0">
-            <div class="w-100 text-center text-white">
-                Envíos a todo México
-            </div>
-        </nav>
+        <!-- HEADER/NAVBAR -->
+        <div class="fixed-top">
 
-        <!-- MENU SUPERIOR -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3" style="padding-right: 2%; padding-left: 2%;">
+            <!-- SUBTITULO -->
+            <nav class="navbar navbar-dark bg-dark px-0 pb-0 mb-0">
+                <div class="w-100 text-center text-white">
+                    Envíos a todo México
+                </div>
+            </nav>
 
-            <div class="container-fluid w-100 d-lg-flex">
-                
-                <!-- LOGO DE PUNTO-ARTE -->
+            <!-- MENU SUPERIOR -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3" style="padding-right: 2%; padding-left: 2%;">
 
-                    <div class="col-lg-4 d-none d-sm-block">  
-                        <img class="img-responsive" src="./images/logo_blanco.png" width="180" height="30" class="img-fluid" alt="Responsive image" />
-                    </div><!-- logo grande-->
+                <div class="container-fluid w-100 d-lg-flex">
+                    
+                    <!-- LOGO DE PUNTO-ARTE -->
 
-                    <div class="d-block d-sm-none">
-                        <img class="img-responsive" src="./images/recortes-34.png" width="40" height="30" class="img-fluid" alt="Responsive image" />
-                    </div><!-- logo pequeño-->
-                
-                <!-- BOTON PANTALLA RESPONSIVA MEDIANA/PEQUEÑA-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <div class="col-lg-4 d-none d-sm-block">  
+                            <img class="img-responsive" src="./images/logo_blanco.png" width="180" height="30" class="img-fluid" alt="Responsive image" />
+                        </div><!-- logo grande-->
 
-                <!-- MENU DE BOTON RESPONSIVO -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav w-100">
+                        <div class="d-block d-sm-none">
+                            <img class="img-responsive" src="./images/recortes-34.png" width="40" height="30" class="img-fluid" alt="Responsive image" />
+                        </div><!-- logo pequeño-->
+                    
+                    <!-- BOTON PANTALLA RESPONSIVA MEDIANA/PEQUEÑA-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <!-- PAR DE BOTONES DE ENMEDIO -->
-                        <div class="col-lg-6">
-                            <li class="nav-item d-flex justify-content-center" >
-                                <div class="btn-group">
-                                    <div class="dropdown show">
-                                        <button style="color: white;" class="btn dropdown-toggle" type="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <strong>
-                                                Obras
-                                            </strong>
-                                            <i class="bi bi-chevron-down"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="position:absolute">
-                                            <a class="dropdown-item" href="#">Obra 1</a>
-                                            <a class="dropdown-item" href="#">Obra 2</a>
-                                            <a class="dropdown-item" href="#">Obra N</a>
+                    <!-- MENU DE BOTON RESPONSIVO -->
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav w-100">
+
+                            <!-- PAR DE BOTONES DE ENMEDIO -->
+                            <div class="col-lg-6">
+                                <li class="nav-item d-flex justify-content-center" >
+                                    <div class="btn-group">
+                                        <div class="dropdown show">
+                                            <button style="color: white;" class="btn dropdown-toggle" type="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <strong>
+                                                    Obras
+                                                </strong>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="position:absolute">
+                                                <a class="dropdown-item" href="#">Obra 1</a>
+                                                <a class="dropdown-item" href="#">Obra 2</a>
+                                                <a class="dropdown-item" href="#">Obra N</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button style="color: white;" class="btn dropdown-toggle" type="button" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <strong>
+                                                    Artistas
+                                                </strong>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="position:absolute">
+                                                <a class="dropdown-item" href="#">Artista 1</a>
+                                                <a class="dropdown-item" href="#">Artista 2</a>
+                                                <a class="dropdown-item" href="#">Artista N</a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="dropdown">
-                                        <button style="color: white;" class="btn dropdown-toggle" type="button" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <strong>
-                                                Artistas
-                                            </strong>
-                                            <i class="bi bi-chevron-down"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="position:absolute">
-                                            <a class="dropdown-item" href="#">Artista 1</a>
-                                            <a class="dropdown-item" href="#">Artista 2</a>
-                                            <a class="dropdown-item" href="#">Artista N</a>
-                                        </div>
+                                </li>
+                            </div>
+                            
+                            <!-- 4 BOTONES DE ICONOS/IMAGENES -->
+                            <div class="col-lg-6">
+                                <li class="nav-item d-flex justify-content-center justify-content-lg-end">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn" style="background-color: transparent;"> 
+                                            <img src="./images/recortes-57 (1).png" width="15" height="15" alt="">
+                                        </button> 
+                                        <button type="button" class="btn" style="background-color: transparent;"> 
+                                            <img src="./images/recortes-58 (1).png" width="15" height="15" alt="">
+                                        </button> 
+                                        <button type="button" class="btn" style="background-color: transparent;"> 
+                                            <img src="./images/recortes-60 (1).png" width="15" height="15" alt="">
+                                            <span class="badge badge-light px-0 mx-0"style="color: #e03be0;">2</span>
+                                        </button> 
+                                        <button type="button" class="btn" style="background-color: transparent;"> 
+                                            <img src="./images/recortes-59 (1).png" width="15" height="15" alt="">
+                                            <span class="badge badge-light px-0 mx-0"style="color: #e03be0;">2</span>
+                                        </button> 
                                     </div>
-                                </div>
-                            </li>
-                        </div>
-                        
-                        <!-- 4 BOTONES DE ICONOS/IMAGENES -->
-                        <div class="col-lg-6">
-                            <li class="nav-item d-flex justify-content-center justify-content-lg-end">
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn" style="background-color: transparent;"> 
-                                        <img src="./images/recortes-57 (1).png" width="15" height="15" alt="">
-                                    </button> 
-                                    <button type="button" class="btn" style="background-color: transparent;"> 
-                                        <img src="./images/recortes-58 (1).png" width="15" height="15" alt="">
-                                    </button> 
-                                    <button type="button" class="btn" style="background-color: transparent;"> 
-                                        <img src="./images/recortes-60 (1).png" width="15" height="15" alt="">
-                                        <span class="badge badge-light px-0 mx-0"style="color: #e03be0;">2</span>
-                                    </button> 
-                                    <button type="button" class="btn" style="background-color: transparent;"> 
-                                        <img src="./images/recortes-59 (1).png" width="15" height="15" alt="">
-                                        <span class="badge badge-light px-0 mx-0"style="color: #e03be0;">2</span>
-                                    </button> 
-                                </div>
-                            </li>
-                        </div>
+                                </li>
+                            </div>
 
-                    </ul>
-                </div><!--# Fin de menu responsivo-->
-            </div>
-        </nav>  <!--# Fin de menu superior *************************************************************-->
+                        </ul>
+                    </div><!--# Fin de menu responsivo-->
+                </div>
+            </nav>  <!--# Fin de menu superior *************************************************************-->
+        </div>
     
    
         <!-- FORMULARIOS -->
-        <div class="container d-flex justify-content-center text-secondary">
 
-            <!-- FORMULARIO DE INICIO DE SESION -->
+         <!-- FORMULARIO DE INICIO DE SESION -->
+        <div class="container d-flex justify-content-center text-secondary" style="margin-top: 80px;">
             <div class="card mt-5 mb-3" style="width: 240px; border: none;">
 
                 <p class="h5 text-center my-4"> <!-- texto -->
@@ -157,10 +161,11 @@
                     
                 </form>
             </div>
-        </div>
+        </div><!-- Fin inicio de sesion-->
 
         <hr class="w-75 mx-auto">   <!-- LINEA HORIZONTAL-->
 
+        <!-- TEXTO -->
         <div class="container text-secondary">
             <p class="h5 text-center my-4">
                 Crear <strong>Cuenta</strong>
@@ -168,7 +173,6 @@
         </div>        
 
         <!-- PAR DE FORMULARIOS COLECCIONISTA/ARTISTA -->
-
         <div class="container-fluid d-flex justify-content-center text-secondary" >
 
             <div class="row" style="width: 860px;">
@@ -267,8 +271,6 @@
             </div>
         </div> <!--# Fin par de formularios -->     
 
-
-
         <!-- scroll bar lateral -->
         <div class="my-scrollbar d-none d-sm-block">
     
@@ -280,9 +282,8 @@
               <div class="force-overflow"></div>
             </div>
         
-            <p> <!-- texto volteado-->
-              Contáctanos
-            </p>
+            <!-- texto volteado-->
+            <p> Contáctanos </p>
         
             <!-- iconos -->
             <div class="text-center">
