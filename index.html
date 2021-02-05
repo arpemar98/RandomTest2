@@ -2,6 +2,7 @@
 <html lang="es">
 
     <head>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>RandomTest2</title>
@@ -11,6 +12,15 @@
 
         <!-- ICONOS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+        <!-- Generar linea vertical entre 2 columnas (usar en col de la derecha)-->
+        <style type="text/css">
+            @media (min-width: 992px) {
+                .my-custom-class {
+                    border-left: 1px solid #d8d8d8;
+                }
+            }
+        </style>
 
     </head>
 
@@ -24,16 +34,19 @@
         </nav>
 
         <!-- MENU SUPERIOR -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 pb-3 " >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3" style="padding-right: 2%; padding-left: 2%;">
 
             <div class="container-fluid w-100 d-lg-flex">
                 
                 <!-- LOGO DE PUNTO-ARTE -->
-                <div class="col-lg-4">
-                    <a class="navbar-brand" href="#">
-                        <img class="img-responsive" src="./images/logo_blanco.png" width="180" height="30" class="img-fluid" alt="Responsive image" />   <!--Desktop-->
-                    </a> 
-                </div>
+
+                    <div class="col-lg-4 d-none d-sm-block">  
+                        <img class="img-responsive" src="./images/logo_blanco.png" width="180" height="30" class="img-fluid" alt="Responsive image" />
+                    </div><!-- logo grande-->
+
+                    <div class="d-block d-sm-none">
+                        <img class="img-responsive" src="./images/recortes-34.png" width="40" height="30" class="img-fluid" alt="Responsive image" />
+                    </div><!-- logo pequeño-->
                 
                 <!-- BOTON PANTALLA RESPONSIVA MEDIANA/PEQUEÑA-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,17 +113,156 @@
 
                     </ul>
                 </div><!--# Fin de menu responsivo-->
-
-                
-       
             </div>
-        
-        </nav>  <!--FIN DEL MENU SUPERIOR *************************************************************-->
+        </nav>  <!--# Fin de menu superior *************************************************************-->
     
    
-        <div>
-            hello world
+        <!-- FORMULARIOS -->
+        <div class="container d-flex justify-content-center text-secondary">
+
+            <!-- FORMULARIO DE INICIO DE SESION -->
+            <div class="card mt-5 mb-3" style="width: 240px; border: none;">
+
+                <p class="h5 text-center my-4"> <!-- texto -->
+                    Iniciar <strong>Sesión</strong>
+                </p>
+
+                <form>
+                    <div class="form-group mb-2"><!-- nombre -->
+                        <p class="my-0" style="font-size: 10px; font-weight: bold; padding-left: 12px;">Nombre</p>
+                      <input type="text" class="form-control mx-auto">
+                    </div>
+
+                    <div class="form-group mb-2"><!-- contraseña -->
+                        <p class="my-0" style="font-size: 10px; font-weight: bold; padding-left: 12px;">Contraseña</p>
+                      <input type="password" class="form-control" >
+                    </div>
+
+                    <!-- link olvido contraseña -->
+                    <div><small class="form-text text-muted" style="font-size: 10px;">
+                        <a href="#">
+                            <strong>Olvidé mi contraseña</strong>
+                        </a>
+                    </small></div>
+  
+                    <!-- boton entrar -->
+                    <div class="p-4"><button
+                        class="btn btn-primary mx-auto w-100" 
+                        style=" height: 45px;">
+                        Entrar
+                    </button></div>
+                    
+                </form>
+            </div>
         </div>
+
+        <hr class="w-75 mx-auto">   <!-- LINEA HORIZONTAL-->
+
+        <div class="container text-secondary">
+            <p class="h5 text-center my-4">
+                Crear <strong>Cuenta</strong>
+            </p>
+        </div>        
+
+        <!-- PAR DE FORMULARIOS COLECCIONISTA/ARTISTA -->
+
+        <div class="container-fluid d-flex justify-content-center text-secondary" >
+
+            <div class="row" style="width: 860px;">
+
+                <!-- MENU IZQUIERDO (COLECCIONISTA)-->
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="card my-3 d-flex justify-content-center" style="width: 260px; border: none;">
+
+                        <div class="text-center"> <!-- imagen -->
+                            <img class="img-responsive" src="./images/recortes-29 (1).png" width="80" height="80" class="img-fluid" alt="Responsive image" />
+                        </div>
+
+                        <p class="h5 text-center my-4">
+                            Soy <strong>coleccionista</strong>
+                        </p>
+
+                        <div class="text-center px-4 " style="font-size: 13px;">
+                            Crea una cuenta para comprar y conocer las obras de diferentes artistas.
+                        </div>
+
+                        <form >
+                            <div class="form-group my-1"> <!-- nombre completo -->
+                                <p class="my-0" style="font-size: 10px; font-weight: bold; padding-left: 12px;">Nombre completo</p>
+                                <input type="text" class="form-control mx-auto">
+                            </div>
+
+                            <div class="form-group mb-1"> <!-- correo -->
+                                <p class="my-0" style="font-size: 10px; font-weight: bold; padding-left: 12px;">Tu correo</p>
+                                <input type="email" class="form-control mx-auto">
+                            </div>
+
+                            <div class="form-group mb-1"> <!-- contraseña -->
+                                <p class="my-0" style="font-size: 10px; font-weight: bold; padding-left: 12px;">Contraseña</p>
+                                <input type="password" class="form-control mx-auto">
+                            </div>
+
+                            <div class="form-group mb-1"> <!-- repetir contraseña -->
+                                <p class="my-0" style="font-size: 10px; font-weight: bold; padding-left: 12px;">Repetir contraseña</p>
+                                <input type="password" class="form-control mx-auto">
+                            </div>
+
+                            <div class="form-check"> <!-- checkbox -->
+                                <input type="checkbox" class="form-check-input">
+
+                                <label class="form-check-label" style="font-size: 11px;">
+                                    Al registrarme, acepto las 
+                                    <a href="#"><strong>Políticas de privacidad</strong></a>
+                                     y los 
+                                     <a href="#"><strong>Términos y Condiciones. </strong></a>
+                                </label>
+                            </div>
+
+                            <!-- boton crear cuenta-->
+                            <div class="pb-4 px-4 pt-2">
+                                <button 
+                                    class="btn btn-primary mx-auto w-100" 
+                                    style="height: 45px;">
+                                    Crear cuenta
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div> <!--# Fin form izquierdo -->
+
+                <hr class="d-block d-lg-none d-xl-none w-75 mx-auto">   <!-- LINEA HORIZONTAL (pantallas medianas o inferiores)-->
+                
+                <!-- MENU DERECHO (ARTISTA)-->
+                <div class="my-custom-class col-lg-6 d-flex justify-content-center align-self-center">
+                    
+                    <div class="card my-5" style="width: 260px; border: none;">
+
+                        <div class="text-center"> <!-- imagen -->
+                            <img class="img-responsive" src="./images/recortes-30 (1).png" width="50" height="85" class="img-fluid" alt="Responsive image" />
+                        </div>
+
+                        <p class="h5 text-center my-4">
+                            Soy <strong>artista</strong>
+                        </p>
+
+                        <div class="text-center px-4 " style="font-size: 13px;">
+                            Crea una cuenta para mostrar tus trabajos y darte a conocer como artísta.
+                        </div>
+                        
+                        <!-- boton registrarse -->
+                        <div class="pb-4 px-4 pt-2">
+                            <button 
+                                class="btn btn-primary mx-auto w-100" 
+                                style="height: 45px;">
+                                Aplicar ahora
+                            </button>
+                        </div>
+                    </div>
+                </div><!--# Fin form derecho -->
+
+            </div>
+        </div> <!--# Fin par de formularios -->     
 
 
 
