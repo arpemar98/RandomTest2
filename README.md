@@ -2,7 +2,7 @@
 
 *Maquetado de login con css*
 
-Instrucciones:
+**Instrucciones:**
 
-1.- Descargar repositorio.
-2.- Abrir _index.html_ en un navegador web.
+1. Descargar repositorio.
+2. Abrir **_index.html_** en un navegador web.
